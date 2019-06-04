@@ -26,7 +26,7 @@ barplot(height = feat$Count, horiz = TRUE, names.arg = feat$Feature,
         main = "Number of features in the mouse GRCm38 genome")
 ```
 
-![](class5_files/figure-gfm/unnamed-chunk-1-2.png)<!-- -->
+![](class5_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 ``` r
 # 3A. Providing Color Vectors
@@ -36,4 +36,4 @@ par(mar= c(8.1, 3.1, 4.1, 2))
 barplot(height = MF$Count, names.arg = MF$Sample, las=2, col = cm.colors(10))
 ```
 
-![](class5_files/figure-gfm/unnamed-chunk-1-3.png)<!-- -->
+![](class5_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
