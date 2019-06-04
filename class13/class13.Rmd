@@ -1,0 +1,66 @@
+---
+title: "Untitled"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Read CSV from ensemble
+```{r}
+mxl <- read.csv("373531-SampleGenotypes-Homo_sapiens_Variation_Sample_rs8067378.csv")
+head(mxl)
+```
+
+```{r}
+table(mxl$Genotype..forward.strand.)
+```
+
+```{r}
+(table(mxl$Genotype..forward.strand.)/nrow(mxl)) * 100
+```
+
+## Quality scores in FASTQ files
+
+The 4th line of a FASTQ sequence format file encodes the quality score that tells us how good the sequence at a given position is (ex: how likely it is to be correct based on instrument)
+```{r}
+library(seqinr)
+library(gtools)
+phred <- asc( s2c("DDDDCDEDCDDDDBBDDDCC@") ) - 33
+phred
+## D D D D C D E D C D D D D B B D D D C C @
+## 35 35 35 35 34 35 36 35 34 35 35 35 35 33 33 35 35 35 34 34 31
+prob <- 10**(-phred/10)
+```
+
+```{r}
+file <- read.table("rs8067378_ENSG00000172057.6.txt")
+summary(file)
+```
+
+```{r}
+head(file)
+```
+
+```{r}
+boxplot(file)
+```
+
+```{r}
+inds <- file$geno == "G/G"
+```
+
+```{r}
+file[inds,]
+```
+
+
+
+
+
+
+
+
+
+
