@@ -10,7 +10,7 @@ This is my classwork from [BIMM 143 Spring 2019](https://bioboot.github.io/bimm1
 - class 11: [Structural Bioinformatics](https://github.com/sschweis/BIMM143/blob/master/class11/class11markdown.md)
 - class 12: [Bioinformatics in drug discovery and design](https://github.com/sschweis/BIMM143/blob/master/class12/class12.md)
 - class 13: [Genome informatics and high throughput sequencing](https://github.com/sschweis/BIMM143/blob/master/class13/class13.md)
-- class 14: [Transcriptomics and the analysis of RNA-Seq data]()
+- class 14: [Transcriptomics and the analysis of RNA-Seq data](https://github.com/sschweis/BIMM143/blob/master/class14/class14.md)
 - class 15: [Genome annotation and the interpretation of gene lists]()
 - class 16: [Essential UNIX for bioinformatics]()
 - class 17: [Biological network analysis]()
